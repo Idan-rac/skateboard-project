@@ -258,6 +258,7 @@ nav .btn:hover {
     background-color: #0056b3;
 }
 
+<<<<<<< HEAD
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .products-grid {
@@ -301,15 +302,39 @@ nav .btn:hover {
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 10px;
+=======
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Tablet and Mobile Styles */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        width: 95%;
+        padding: 20px;
+>>>>>>> 2a01a90056db0eccdb6df568e44833c67bb5e1bf
     }
 
     nav {
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
+=======
+        padding: 10px;
+>>>>>>> 2a01a90056db0eccdb6df568e44833c67bb5e1bf
     }
 
     nav .btn {
         width: 100%;
+<<<<<<< HEAD
         text-align: center;
         margin: 5px 0;
     }
@@ -322,3 +347,59 @@ nav .btn:hover {
         width: 100px;
     }
 }
+=======
+        margin: 5px 0;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile-specific Styles */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-card h3 {
+        font-size: 1.1em;
+    }
+
+    .product-card .price {
+        font-size: 1.1em;
+    }
+
+    .contact-form-container {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Desktop Styles */
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product-card {
+        transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .contact-form-container {
+        max-width: 600px;
+    }
+}
+>>>>>>> 2a01a90056db0eccdb6df568e44833c67bb5e1bf
